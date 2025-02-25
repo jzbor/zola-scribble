@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 	<head>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="/style.css">
 		<link rel="stylesheet" type="text/css" href="/syntax-theme-dark.css" media="(prefers-color-scheme: dark)" />
 		<link rel="stylesheet" type="text/css" href="/syntax-theme-light.css" media="(prefers-color-scheme: light)" />
@@ -39,9 +40,12 @@
 
 		{% block articles %}
 		{% if section.pages and section.path != '/' %}
+		<hr class="small">
 		<div id="articles">
 			{% for page in section.pages %}
+			{% if loop.index0 != 0 %}
 			<hr style="margin: 1em 0">
+			{% endif %}
 			<h3><a href="{{ page.path }}">{{ page.title }}</a></h3>
 			<div class="article-info">
 				<a href="{{ page.path }}" class="article-read">{{ page.reading_time }}min read</a>
@@ -61,7 +65,9 @@
 		{% endblock articles %}
 
 		<footer>
-			<hr style="width: 5em; margin-top: 3em; margin-bottom: 3em;">
+			{% if config.extra.credit or config.extra.copyright %}
+			<hr class="small">
+			{% endif %}
 			{% if config.extra.credit %}
 			<p id="credit">Made with <a href="https://getzola.org">Zola</a> using the <a href="https://github.com/jzbor/zola-scribble">Scribble</a> theme.</p>
 			{% endif %}
