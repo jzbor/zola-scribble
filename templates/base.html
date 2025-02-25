@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+	<head>
+		<link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) | safe }}">
+	</head>
+
+	<body>
+		<header>
+			<a href="/" id="homelink" {% if config.extra.tent %}style="margin-left: 40px;"{% endif %}>{{ config.title }}</a>
+			<nav>
+				{% for item in config.extra.menu %}
+				<a href="{{ item.url }}">{{ item.name }}</a>
+				{% endfor %}
+			</nav>
+			<div style="position: relative;">
+				{% if config.extra.tent %}
+				<hr noshade id="tent-left">
+				<hr noshade id="tent-right">
+				{% endif %}
+				<hr noshade style="margin-top:0">
+			</div>
+		</header>
+
+		{% block content %}
+		{% if section.title %}
+		<h1>{{ section.title }}</h1>
+		{% elif page.title %}
+		<h1>{{ page.title }}</h1>
+		{% endif %}
+
+		{% if section.content %}
+		<div id="content">{{ section.content | markdown | safe }}</div>
+		{% elif page.content %}
+		<div id="content">{{ page.content | markdown | safe }}</div>
+		{% endif %}
+		{% endblock content %}
+
+		{% block articles %}
+		{% if section.pages and section.path != '/' %}
+		<div id="articles">
+			{% for page in section.pages %}
+			<hr style="margin: 1em 0">
+			<h3><a href="{{ page.path }}">{{ page.title }}</a></h3>
+			<div class="article-info">
+				<a href="{{ page.path }}" class="article-read">{{ page.reading_time }}min read</a>
+				<a href="{{ page.path }}" class="article-date">{{ page.date }}</a>
+			</div>
+			{{ page.description }}
+			{% endfor %}
+		</div>
+		{% endif %}
+		{% endblock articles %}
+	</body>
+</html>

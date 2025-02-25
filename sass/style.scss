@@ -1,0 +1,10 @@
+// default
+@import "./style-light"
+
+@media (prefers-color-scheme: light) {
+  @import "./style-light"
+}
+
+@media (prefers-color-scheme: dark) {
+  @import "./style-dark"
+}

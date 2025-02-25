@@ -1,0 +1,144 @@
+@import url(https://fonts.bunny.net/css?family=aboreto:400|alef:400);
+
+body {
+	padding: 20px;
+        background: $background;
+	font-family: 'Alef', serif;
+        font-size: 13pt;
+        max-width: 50em;
+        margin: auto;
+        color: $foreground;
+}
+
+
+
+// NAVIGATION
+header #tent-left {
+  position: absolute;
+  left: -7px;
+  top: -21px;
+  width: 30px;
+  rotate: -55deg;
+  color: $foreground;
+}
+
+header #tent-right {
+  position: absolute;
+  left: 5px;
+  top: -23px;
+  width: 25px;
+  rotate: 55deg;
+  color: $foreground;
+}
+
+header {
+  position: relative;
+}
+
+header a:link, a:visited {
+  text-decoration: none;
+  color: $foreground;
+}
+
+header a:hover, a:active {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: $foreground;
+}
+
+header nav {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+}
+
+header nav a {
+  margin-left: 1em;
+}
+
+
+// CONTENT
+#content {
+  margin-top: 2em;
+}
+
+#content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+// DOCUMENT ELEMENTS
+blockquote {
+  padding: 1px 1em;
+  border-left: 2px solid $foreground;
+  background: $weak-background;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  margin: 0;
+  border: 2px solid $weak-foreground;
+}
+
+img {
+  max-width: 100%;
+  border: 3px solid $foreground;
+  padding: 5px;
+}
+
+
+// ARTICLE LISTING
+#articles {
+  margin-top: 3em;
+  text-align: justify;
+}
+
+#articles a {
+  text-decoration: none;
+  color: $foreground;
+}
+
+#articles h3 {
+  margin-bottom: 0.3em;
+}
+
+#articles .article-info {
+  position: relative;
+}
+
+#articles .article-info a {
+  color: $weak-foreground;
+}
+
+#articles .article-date {
+  position: absolute;
+  right: 0;
+}
+
+
+
+a:link, a:visited {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: $foreground;
+}
+
+a:hover, a:active {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  color: $foreground;
+}
+h1 {
+	font-family: 'Aboreto', display;
+	text-align: center;
+}
+
+hr {
+  size: 2px;
+  color: $foreground;
+}
