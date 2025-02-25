@@ -1,4 +1,4 @@
-@import url(https://fonts.bunny.net/css?family=aboreto:400|alef:400|inconsolata:400);
+@import url(https://fonts.bunny.net/css?family=aboreto:400|noto-serif-tamil:400|alkatra:400|inconsolata:400);
 
 $tent-length-left: 30px;
 $tent-length-right: 23px;
@@ -7,7 +7,7 @@ $tent-angle: 55deg;
 body {
 	padding: 20px;
         background: $background;
-	font-family: 'Alef', serif;
+	font-family: 'Alkatra', 'Noto Serif Tamil', serif;
         font-size: 13pt;
         max-width: 50em;
         margin: auto;
@@ -51,6 +51,7 @@ header a:hover, a:active {
 }
 
 #topbar {
+  // font-family: 'Alkatra', serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
