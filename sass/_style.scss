@@ -4,14 +4,24 @@ $tent-length-left: 30px;
 $tent-length-right: 23px;
 $tent-angle: 55deg;
 
+$body-padding: 20px;
+
 body {
-	padding: 20px;
-        background: $background;
-	font-family: "Manrope", sans-serif;
-        font-size: 12pt;
-        max-width: 50em;
-        margin: auto;
-        color: $foreground;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* fallback height */
+  min-height: calc(100vh - 2 * $body-padding);
+  /* new small viewport height for modern browsers */
+  min-height: calc(100svh - 2 * $body-padding);
+
+  padding: $body-padding;
+  background: $background;
+  font-family: "Manrope", sans-serif;
+  font-size: 12pt;
+  max-width: 50em;
+  margin: auto;
+  color: $foreground;
 }
 
 
@@ -54,14 +64,12 @@ header a:hover, a:active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   column-gap: 1em;
   justify-content: space-evenly;
 }
 
 #homelink {
   flex-grow: 1;
-  align-self: flex-start;
 }
 
 header nav {
@@ -80,7 +88,7 @@ footer {
 
 // CONTENT
 #content {
-  margin-top: 2em;
+  flex: 1;
 }
 
 #content p {
