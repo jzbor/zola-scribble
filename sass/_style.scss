@@ -39,10 +39,6 @@ header #tent-right {
   transform-origin: $tent-length-left 0;
 }
 
-header {
-  position: relative;
-}
-
 header a:link, a:visited {
   text-decoration: none;
   color: $foreground;
@@ -54,18 +50,27 @@ header a:hover, a:active {
   color: $highlight;
 }
 
-header nav {
+#topbar {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   column-gap: 1em;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 }
 
 #homelink {
   flex-grow: 1;
-  margin-right: 4em;
   align-self: flex-start;
 }
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  justify-content: space-evenly;
+}
+
 
 // FOOTER
 footer {

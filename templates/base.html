@@ -10,12 +10,14 @@
 
 	<body>
 		<header>
-			<nav>
-				<a href="/" id="homelink" {% if config.extra.tent %}style="margin-left: 35px;"{% endif %}>{{ config.title }}</a>
-				{% for item in config.extra.menu %}
-				<a href="{{ item.url }}">{{ item.name }}</a>
-				{% endfor %}
-			</nav>
+			<div id="topbar" {% if config.extra.tent %}style="margin-left: 35px;"{% endif %}>
+				<a href="/" id="homelink">{{ config.title }}</a>
+				<nav>
+					{% for item in config.extra.menu %}
+					<a href="{{ item.url }}">{{ item.name }}</a>
+					{% endfor %}
+				</nav>
+			</div>
 			<div style="position: relative;">
 				{% if config.extra.tent %}
 				<hr noshade id="tent-left">
