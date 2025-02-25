@@ -1,4 +1,4 @@
-@import url(https://fonts.bunny.net/css?family=aboreto:400|noto-serif-tamil:400|alkatra:400|inconsolata:400);
+@import url(https://fonts.bunny.net/css?family=aboreto:400|manrope:500|alkatra:400|inconsolata:400);
 
 $tent-length-left: 30px;
 $tent-length-right: 23px;
@@ -7,8 +7,8 @@ $tent-angle: 55deg;
 body {
 	padding: 20px;
         background: $background;
-	font-family: 'Alkatra', 'Noto Serif Tamil', serif;
-        font-size: 13pt;
+	font-family: "Manrope", sans-serif;
+        font-size: 12pt;
         max-width: 50em;
         margin: auto;
         color: $foreground;
@@ -51,7 +51,6 @@ header a:hover, a:active {
 }
 
 #topbar {
-  // font-family: 'Alkatra', serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -137,10 +136,20 @@ h1 {
 }
 
 h2 {
+  font-family: 'Alkatra', serif;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: $highlight;
 }
+
+h3 {
+  font-family: 'Alkatra', serif;
+}
+
+h4 {
+  font-family: 'Alkatra', serif;
+}
+
 
 hr {
   size: 2px;
