@@ -22,7 +22,6 @@ smart_punctuation = true
 
 [extra]
 # Put all your custom variables here
-tent = true
 menu = [
   {url = "/markdown-overview", name = "markdown"},
   {url = "/blog", name = "blog"},
