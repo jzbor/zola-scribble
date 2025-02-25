@@ -19,7 +19,7 @@ header #tent-left {
   top: -21px;
   width: 30px;
   rotate: -55deg;
-  color: $foreground;
+  color: $highlight;
 }
 
 header #tent-right {
@@ -28,7 +28,7 @@ header #tent-right {
   top: -23px;
   width: 25px;
   rotate: 55deg;
-  color: $foreground;
+  color: $highlight;
 }
 
 header {
@@ -43,7 +43,7 @@ header a:link, a:visited {
 header a:hover, a:active {
   text-decoration-line: underline;
   text-decoration-style: solid;
-  color: $foreground;
+  color: $highlight;
 }
 
 header nav {
@@ -106,9 +106,15 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: $highlight;
+}
+
 hr {
   size: 2px;
-  color: $foreground;
+  color: $highlight;
 }
 
 // ARTICLE LISTING
@@ -149,8 +155,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  color: $foreground;
+  text-decoration-line: none;
+  color: $highlight;
 }
 
