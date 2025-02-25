@@ -77,6 +77,9 @@
 			{% if config.extra.copyright %}
 			<p id="copyright">&#169; {{ config.extra.copyright }}</p>
 			{% endif %}
+			{% if config.extra.custom_footer %}
+			<p id="custom-footer">{{ config.extra.custom_footer }}</p>
+			{% endif %}
 
 			{% if config.extra.goatcounter %}
 			<script data-goatcounter="https://{{ config.extra.goatcounter }}/count"

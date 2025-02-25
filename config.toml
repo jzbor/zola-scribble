@@ -21,13 +21,17 @@ highlight_themes_css = [
 smart_punctuation = true
 
 [extra]
-# Put all your custom variables here
+# menu displayed in the top bar
 menu = [
   {url = "/markdown-overview", name = "markdown"},
   {url = "/blog", name = "blog"},
 ]
 
+# give credit to zola and the theme in footer
 credit = true
+# display copyright notice in the footer
 copyright = "jzbor"
+# display an aditional third footer item
+#custom_footer = ""
 
 
