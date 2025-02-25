@@ -1,1 +1,13 @@
 name = "scribble"
+description = "A simple homepage theme"
+license = "MIT"
+homepage = "https://github.com/jzbor/zola-scribble"
+demo = ""
+
+[extra]
+credit = true
+
+[author]
+name = "jzbor"
+homepage = "https://jzbor.de"
+
