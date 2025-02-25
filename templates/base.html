@@ -75,6 +75,10 @@
 			<p id="copyright">&#169; {{ config.extra.copyright }}</p>
 			{% endif %}
 
+			{% if config.extra.goatcounter %}
+			<script data-goatcounter="https://{{ config.extra.goatcounter }}/count"
+				async src="//{{ config.extra.goatcounter }}/count.js"></script>
+			{% endif %}
 		</footer>
 	</body>
 </html>
