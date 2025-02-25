@@ -25,8 +25,8 @@ header #tent-left {
 header #tent-right {
   position: absolute;
   left: 5px;
-  top: -23px;
-  width: 25px;
+  top: -24px;
+  width: 23px;
   rotate: 55deg;
   color: $highlight;
 }
@@ -47,15 +47,17 @@ header a:hover, a:active {
 }
 
 header nav {
-  position: absolute;
-  right: 0;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  justify-content: flex-end;
 }
 
-header nav a {
-  margin-left: 1em;
+#homelink {
+  flex-grow: 1;
+  margin-right: 4em;
+  align-self: flex-start;
 }
-
 
 // FOOTER
 footer {

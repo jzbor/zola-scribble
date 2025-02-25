@@ -25,6 +25,12 @@ smart_punctuation = true
 menu = [
   {url = "/markdown-overview", name = "markdown"},
   {url = "/blog", name = "blog"},
+  {url = "/markdown-overview", name = "markdown"},
+  {url = "/blog", name = "blog"},
+  {url = "/markdown-overview", name = "markdown"},
+  {url = "/blog", name = "blog"},
+  {url = "/markdown-overview", name = "markdown"},
+  {url = "/blog", name = "blog"},
 ]
 
 credit = true
