@@ -1,10 +1,12 @@
 +++
 title = "Blog entry 2"
-date = 2018-07-18
+date = 2018-07-20
 description = "Lorem ipsum odor amet, consectetuer adipiscing elit. Ac risus tellus feugiat sagittis ornare nibh vehicula ornare. Ipsum facilisi placerat nisi, litora tempor metus. Leo laoreet felis turpis senectus lobortis sagittis. Facilisis habitant cubilia platea mauris massa vulputate rhoncus diam. Consequat rutrum proin sodales per mus euismod metus risus consequat. Nam montes scelerisque mauris ridiculus cursus varius ut enim."
 +++
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Ac risus tellus feugiat sagittis ornare nibh vehicula ornare. Ipsum facilisi placerat nisi, litora tempor metus. Leo laoreet felis turpis senectus lobortis sagittis. Facilisis habitant cubilia platea mauris massa vulputate rhoncus diam. Consequat rutrum proin sodales per mus euismod metus risus consequat. Nam montes scelerisque mauris ridiculus cursus varius ut enim.
+
+<!-- more -->
 
 Sollicitudin sed tortor maximus dictum tempus ultrices dictumst mauris sociosqu. Nulla non maecenas egestas habitant natoque habitant? Ex metus turpis ridiculus eros congue feugiat conubia. Sociosqu leo aliquet justo aptent interdum imperdiet commodo cras. Odio ultricies id sit volutpat ridiculus ex eleifend quam. Condimentum facilisis etiam penatibus lacinia id.
 

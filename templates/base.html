@@ -47,7 +47,14 @@
 				<a href="{{ page.path }}" class="article-read">{{ page.reading_time }}min read</a>
 				<a href="{{ page.path }}" class="article-date">{{ page.date }}</a>
 			</div>
+			{% if page.summary %}
+			{{ page.summary | markdown(inline=true) }}
+			{% else %}
 			{{ page.description }}
+			{% endif %}
+			<div style="margin-top: 0.3em">
+				<em><a href="{{ page.path }}" style="margin-left: 2em">Continue Reading</a></em>
+			</div>
 			{% endfor %}
 		</div>
 		{% endif %}
