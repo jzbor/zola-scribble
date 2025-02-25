@@ -1,5 +1,8 @@
 @import url(https://fonts.bunny.net/css?family=aboreto:400|alef:400|inconsolata:400);
 
+$tent-length-left: 30px;
+$tent-length-right: 23px;
+$tent-angle: 55deg;
 
 body {
 	padding: 20px;
@@ -15,20 +18,25 @@ body {
 // NAVIGATION
 header #tent-left {
   position: absolute;
-  left: -7px;
-  top: -21px;
-  width: 30px;
-  rotate: -55deg;
+  width: $tent-length-left;
+  margin: 0px;
+  transform: rotate(-$tent-angle);
+  transform-origin: 0 0;
   color: $highlight;
+}
+
+header #tent-right-div {
+  width: $tent-length-left;
 }
 
 header #tent-right {
   position: absolute;
-  left: 5px;
-  top: -24px;
-  width: 23px;
-  rotate: 55deg;
+  width: $tent-length-right;
+  margin: 0px;
   color: $highlight;
+  left: calc(cos(-$tent-angle) * $tent-length-left * 2 - $tent-length-left - 5px);
+  transform: rotate($tent-angle);
+  transform-origin: $tent-length-left 0;
 }
 
 header {
