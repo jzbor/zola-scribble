@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block articles %}
+{% if section.pages and section.path != '/' %}
+<hr class="small">
+<div id="articles" class="cards">
+	{% for page in section.pages %}
+	<div class="card">
+		{% if page.extra.image %}
+		<img src="{{ page.extra.image }}"/>
+		{% endif %}
+		<div class="card-description">
+			<h3><a href="{{ page.path }}">{{ page.title }}</a></h3>
+			{% if page.summary %}
+			{{ page.summary | markdown(inline=true) }}
+			{% else %}
+			{{ page.description }}
+			{% endif %}
+			<div style="margin-top: 0.3em">
+				<em><a href="{{ page.path }}" style="margin-left: 2em">Read More</a></em>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+{% endif %}
+{% endblock articles %}

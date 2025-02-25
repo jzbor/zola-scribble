@@ -114,8 +114,10 @@ pre {
 }
 
 h1 {
-	font-family: 'Aboreto', display;
-	text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Aboreto', display;
+  text-align: center;
 }
 
 h2 {
@@ -170,8 +172,35 @@ li::marker {
   right: 0;
 }
 
+#articles .card {
+  border: 3px solid $highlight;
+  // padding: 1em;
+  border-radius: 20px;
+  margin: 2em;
+  overflow: hidden;
+}
+
+#articles .card img {
+  border: none;
+  padding: 0;
+}
+
+#articles .card-description {
+  padding: 1em;
+}
+
+#articles .card-description h3 {
+  margin-top: 0em;
+}
+
+#articles.cards {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)),
+}
 
 
+// OTHER
 a:link, a:visited {
   text-decoration-line: underline;
   text-decoration-style: solid;
