@@ -59,5 +59,16 @@
 		</div>
 		{% endif %}
 		{% endblock articles %}
+
+		<footer>
+			<hr style="width: 5em; margin-top: 3em; margin-bottom: 3em;">
+			{% if config.extra.credit %}
+			<p id="credit">Made with <a href="https://getzola.org">Zola</a> using the <a href="https://github.com/jzbor/zola-scribble">Scribble</a> theme.</p>
+			{% endif %}
+			{% if config.extra.copyright %}
+			<p id="copyright">&#169; {{ config.extra.copyright }}</p>
+			{% endif %}
+
+		</footer>
 	</body>
 </html>
