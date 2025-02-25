@@ -1,4 +1,5 @@
-@import url(https://fonts.bunny.net/css?family=aboreto:400|alef:400);
+@import url(https://fonts.bunny.net/css?family=aboreto:400|alef:400|inconsolata:400);
+
 
 body {
 	padding: 20px;
@@ -9,7 +10,6 @@ body {
         margin: auto;
         color: $foreground;
 }
-
 
 
 // NAVIGATION
@@ -77,6 +77,7 @@ blockquote {
 
 table {
   border-collapse: collapse;
+  overflow: auto;
 }
 
 th, td {
@@ -91,6 +92,24 @@ img {
   padding: 5px;
 }
 
+code {
+  font-family: 'Inconsolata', monospace;
+}
+
+pre {
+  overflow: auto;
+  padding: 1em;
+}
+
+h1 {
+	font-family: 'Aboreto', display;
+	text-align: center;
+}
+
+hr {
+  size: 2px;
+  color: $foreground;
+}
 
 // ARTICLE LISTING
 #articles {
@@ -133,12 +152,4 @@ a:hover, a:active {
   text-decoration-style: wavy;
   color: $foreground;
 }
-h1 {
-	font-family: 'Aboreto', display;
-	text-align: center;
-}
 
-hr {
-  size: 2px;
-  color: $foreground;
-}

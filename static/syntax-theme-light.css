@@ -164,7 +164,7 @@ font-weight: bold;
 }
 .z-orgmode.z-link {
  color: #b57614;
-font-style: underline;
+text-decoration: underline;
 }
 .z-orgmode.z-page {
  color: #79740e;
