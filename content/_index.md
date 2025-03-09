@@ -13,8 +13,8 @@ More information on usage and configuration can be found in [the source reposito
 
 
 ## Examples
-This site contains [a page showcasing all the different markdown features](/markdown-overview).
-There is also a [blog section](/blog) with some fake blog entries.
+This site contains [a page showcasing all the different markdown features](/markdown-overview), as well as a [blog section](/blog) with some fake blog entries.
+You can also find [an example of a card view](/animal_cards).
 
 The Markdown source for those pages can be found in the [theme sources](https://github.com/jzbor/zola-scribble/tree/main/content).
 

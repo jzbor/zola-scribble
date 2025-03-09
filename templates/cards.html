@@ -12,7 +12,7 @@
 		<div class="card-description">
 			<h3><a href="{{ page.path }}">{{ page.title }}</a></h3>
 			{% if page.summary %}
-			{{ page.summary | markdown(inline=true) }}
+			{{ page.summary | markdown(inline=true) | safe}}
 			{% else %}
 			{{ page.description }}
 			{% endif %}

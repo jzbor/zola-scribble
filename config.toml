@@ -1,4 +1,4 @@
-title = "/home/scribble"
+title = "scribble"
 
 # The URL the site will be built for
 base_url = "/"
@@ -24,6 +24,7 @@ smart_punctuation = true
 # menu displayed in the top bar
 menu = [
   {url = "/markdown-overview", name = "markdown"},
+  {url = "/animal_cards", name = "card view"},
   {url = "/blog", name = "blog"},
 ]
 
