@@ -31,7 +31,7 @@ menu = [
 credit = true
 # display copyright notice in the footer
 copyright = "jzbor"
-# display an aditional third footer item
+# display an additional third footer item
 #custom_footer = ""
 
 # Disallow known LLM-scrapers in robots.txt
