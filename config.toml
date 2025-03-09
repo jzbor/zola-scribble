@@ -34,4 +34,5 @@ copyright = "jzbor"
 # display an aditional third footer item
 #custom_footer = ""
 
-
+# Disallow known LLM-scrapers in robots.txt
+robots_txt.no_llm = false
