@@ -236,6 +236,58 @@ li::marker {
 }
 
 
+// Table of Contents
+#toc {
+  border: 2px solid $highlight;
+  padding: 2em;
+  margin: 0em;
+  margin-left: 3em;
+  flex-grow: 0;
+  display: inline-block;
+  float: right;
+}
+
+#toc p {
+  font-family: 'Alkatra', serif;
+  font-size: 1.5em;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: $highlight;
+  // text-align: center;
+  margin: 0;
+}
+
+#toc ul li::marker {
+  content: '';
+}
+
+#toc ul li::before {
+  content: '+─  ';
+  color: $highlight;
+  margin-right: 0.5em;
+}
+
+#toc ul li li::before {
+  content: '└────  ';
+  color: $highlight;
+  margin-right: 0.5em;
+}
+
+#toc ul {
+  padding-left: 0;
+}
+
+#toc a:link, a:visited {
+  text-decoration-line: none;
+  color: $foreground;
+}
+
+#toc a:hover, a:active {
+  text-decoration-line: none;
+  color: $highlight;
+}
+
+
 // OTHER
 a:link, a:visited {
   text-decoration-line: underline;

@@ -49,6 +49,39 @@
 			<h1>{{ page.title }}</h1>
 			{% endif %}
 
+			{% if page.toc %}
+			{% set toc = page.toc %}
+			{% set extra = page.extra %}
+			{% elif section.toc %}
+			{% set toc = section.toc %}
+			{% set extra = section.extra %}
+			{% else %}
+			{% set toc = False %}
+			{% set extra = False %}
+			{% endif %}
+			{% if toc and (not 'toc' in extra or extra.toc) and toc | length > 0 %}
+			<div id="toc">
+				<p id="toc-title">Table of contents</p>
+
+				<ul>
+					{% for h1 in toc %}
+					<li>
+						<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+						{% if h1.children %}
+						<ul>
+							{% for h2 in h1.children %}
+							<li>
+								<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+							</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+
 			{% if section.content %}
 			{{ section.content | markdown | safe }}
 			{% elif page.content %}
