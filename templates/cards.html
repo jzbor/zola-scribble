@@ -17,7 +17,11 @@
 			{{ page.description }}
 			{% endif %}
 			<div style="margin-top: 0.3em">
+				{% if 'link' in page.extra %}
+				<em><a href="{{ page.extra.link }}" style="margin-left: 2em">Read More</a></em>
+				{% else %}
 				<em><a href="{{ page.path }}" style="margin-left: 2em">Read More</a></em>
+				{% endif %}
 			</div>
 		</div>
 	</div>
